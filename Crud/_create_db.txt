@@ -1,0 +1,13 @@
+create database db0;
+use db0;
+
+create table t0 ( 
+	id INT(10) AUTO_INCREMENT, 
+	f0 char(30), 
+	f1 char(30),
+	PRIMARY KEY(id) 
+);
+
+insert into t0 values ( '', 'v00', 'v01' );
+insert into t0 values ( '', 'v10', 'v11' );
+select * from t0;
