@@ -1,0 +1,31 @@
+git --version //Check if git is installed or not
+git init	// Create new repo - your folder is converted into git repo
+git status	// Check which files are changed, which are staged, which needs to be committed
+git add .   // Add all files to staging area
+git status  // Will show the added files as green
+git commit -m "Created code1.cpp and command.txt"   // Saves version
+git status  // Will show that no change needs to be committed
+git config --global user.name "Somik"    
+git config --global user.email "samin@cse.uiu.ac.bd"   // Set name and email
+git status
+git log		//Shows all commit history
+git status
+git add .
+git status
+git commit -m "Edited code1.cpp"
+git log
+git checkout 06748c0fe30   // Move to this commit, get hash from git log, not a safe way to move, might lose commits
+git checkout master   // Return back to original position
+git log
+git status
+git add .
+git commit -m "Edited code1.cpp once again"
+git log
+git reset --hard 06748c0fe3   // Delete all commits after the given hash and return to the commit of the given hash
+git log
+git config --global color.ui false // No colors will be seen
+git log
+git config --global color.ui auto  // Reset the colors
+git log
+git log --follow code1.cpp  // Commits that changed the given file will only be shown
+git log --follow command_project1.txt
